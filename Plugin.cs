@@ -50,7 +50,7 @@ namespace GorillaTagModTemplateProject
 
         void Update()
         {
-            inRoom = true;
+            if (inRoom == true)
             {
                 if (ControllerInputPoller.instance.leftControllerPrimaryButton)
                 {
