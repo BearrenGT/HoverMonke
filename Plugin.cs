@@ -46,14 +46,11 @@ namespace GorillaTagModTemplateProject
             /* Code here runs after the game initializes (i.e. GorillaLocomotion.Player.Instance != null) */
         }
 
-        public static Vector3[] lastLeft = new Vector3[] { Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero };
-        public static Vector3[] lastRight = new Vector3[] { Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero, Vector3.zero };
-
         public static float flySpeed = 10f;
 
         void Update()
         {
-            if (inRoom == true) ;
+            inRoom = true;
             {
                 if (ControllerInputPoller.instance.leftControllerPrimaryButton)
                 {
